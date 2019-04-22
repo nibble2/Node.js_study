@@ -1,7 +1,7 @@
 {
   "name": "npmtest-20190422",
   "version": "2.0.0",
-  "description": "npm test",
+  "description": "ILHAN DDONG",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
