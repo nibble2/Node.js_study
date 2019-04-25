@@ -43,7 +43,10 @@ const logger = require('morgan') ;
 const cookieParser = require('Cookie-parser') ;
 const session=require('express-session') ;
 const flash = require('connect-flash') ;
-const path = require('./routes/index') ;
+const path = require('path') ;
+
+const indexRouter = require('./routes/index') ;
+const userRouter = require('./routes/users') ;
 
 const app = express() ;
 
@@ -73,17 +76,12 @@ app.use((req, res, next) => {
   console.log('두번째 미들웨어') ;
   next() ;
 }) ;
-k
+
+//404 not found 
+app.use((req, res, next) => {
+  res.status(404).send('NOT FOUND') ;
+}) ;
+
 app.use('/', indexRouter) ;
-
-app.get('/', (req, res) => {
-  console.log('세번재 미들웨어') ;
-  res.send('Hello express!!') ;
-}) ;
-
-app.get('/users', (req, res) => {
-  console.log('네번째 미들웨어') ;
-  res.send('Hello users') ;
-}) ;
 
 module.exports = app;
