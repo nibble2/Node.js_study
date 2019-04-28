@@ -1,7 +1,7 @@
 const express = require('express') ;
 const logger = require('morgan') ; //morgan 미들웨어 추가, 요청에 대한 정보를 콘솔에 기록해주는 역할.
 const cookieParser = require('cookie-parser') ;
-const session = require('express-session') ;
+const session = require('express-session') ; //메모리에 저장
 const flash = require('connect-flash') ;
 const path = require('path') ;
 //모건, 쿠키파서는 다른사람이 만든 모듈이기 때문에 추가해주어야 한다.

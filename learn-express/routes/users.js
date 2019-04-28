@@ -1,14 +1,15 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express') ;
+const router = express.Router() ;
 
  // GET /users/
- router.get('/users', (req, res) => {
+
+ router.get('/', (req, res) => {
   console.log('네번째 미들웨어') ;
-  res.send('Hello users') ;
+  res.send('Hello Users!!') ;
 }) ;
 
 // DELETE /users
-router.delete('/users', (req, res) => {
+router.delete('/', (req, res) => {
 }) ;
 
-module.exports = router;
+module.exports = router ;
