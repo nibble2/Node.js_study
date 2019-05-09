@@ -8,7 +8,7 @@
   },
   "author": "nibble",
   "license": "ISC",
-  "bin" : {
-    "myCli" : "./index.js"
+  "bin": {
+    "myCli": "./template.js"
   }
 }
