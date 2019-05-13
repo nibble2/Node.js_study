@@ -29,6 +29,3 @@ const answerCallback = (answer) => {
 } ;
 
 rl.question('Node.js 재밌습니까 ? (y/n) : ', answerCallback) ;
-
-
-
