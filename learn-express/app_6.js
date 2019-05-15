@@ -1,4 +1,4 @@
-//indexRouter모듈 추가
+//서버의 흐름을 이해해보기(index.js참고)
 const express = require('express') ;
 const logger = require('morgan') ; 
 const cookieParser = require('cookie-parser') ;
@@ -15,7 +15,6 @@ app.use(express.static(path.join(__dirname, 'public'))) ;
 app.use(express.urlencoded({ extended: false })) ;
 app.use(cookieParser('secret code')) ;
 
-
 app.use(session({
     resave: false, 
     saveUninitialized: false, 
@@ -30,14 +29,30 @@ app.use(flash()) ;
 
 app.use((req, res, next) => {
     console.log('첫번째 미들웨어') ;
-    next() ;
+ //   next() ;
+    if(+new Date() % 2 == 0) {
+        next() ;
+    } else {
+        res.send('50% 당첨이지롱') ;
+    }
 }, (req, res, next) => {
     console.log('두번째 미들웨어') ;
     next() ;
 }) ;
 
-app.use('/', indexRouter) ; //모든 주소 
-app.use('/users', usersRouter) ; //users주소
+app.use('/', indexRouter) ;  
+app.use('/users', usersRouter) ; 
+
+//404 NOT FOUND 라우터 밑에 추가
+app.use((req, res, next) => {
+    res.status(404).send('NOT FOUND') ;
+}) ;
+
+//500 ERROR
+app.use(function(err, req, res, next) {
+    console.error(err) ;
+    res.status(500),send('SERVER ERROR') ;
+  });
 
 module.exports = app ;
 

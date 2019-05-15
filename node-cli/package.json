@@ -1,0 +1,21 @@
+{
+  "name": "node-cli",
+  "version": "1.0.0",
+  "description": "node.js cli program",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nibble",
+  "license": "ISC",
+  "bin": {
+    "myCli": "./rimraf.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "inquirer": "^6.3.1",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.6"
+  }
+}
