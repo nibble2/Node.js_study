@@ -1,0 +1,18 @@
+> npm init
+
+> npm i -g sequelize-cli
+
+> npm i sequelize mysql2
+
+> sequelize init
+
+1. db
+-> config.json
+
+> sequelize db:create
+
+> npm i -D nodemon //서버 코드가 바뀔 때 마다 알아서 재시작
+
+> npm i -g nodemon
+2. tables
+3. rows

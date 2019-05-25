@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-    reqturn sequelize.define('wallet', {
+    return sequelize.define('wallet', {
         money : {
             type: Sequelize.INTEGER,
             allowNull: false,
@@ -14,7 +14,7 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.BOOLEAN,
             allowNull: false,
             comment: 'TRYE면 수입 / FALSE면 지출',
-        }
+        },
     }, {
         timestamps: true, //생성일과 row수정일이 자동으로 기록
         paranoid: true //삭제일가지 기록
