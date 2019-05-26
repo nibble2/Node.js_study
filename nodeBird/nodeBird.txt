@@ -13,6 +13,10 @@
 
 > npm i -D nodemon //서버 코드가 바뀔 때 마다 알아서 재시작
 
-> npm i -g nodemon
+> npm i -g nodemon 
+
+modemon은 개발할때만 필요하다, 운영할때는 코드가 바뀌지 않으니까
+
+> npm i express cookie-parser express-session morgan connect-flash pug
 2. tables
 3. rows
