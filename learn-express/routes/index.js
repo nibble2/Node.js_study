@@ -1,6 +1,10 @@
 const express = require('express') ;
 const router = express.Router() ; //express 객체에서 Router를 꺼내와 모듈로 만들었다.
 
+<<<<<<< HEAD
+router.get('/', function(req, res, next) {
+  res.render('index', {title: 'Express' }) ;
+=======
 /* router.get('/', (req, res, next) => {
   console.log('세번쨰 라우터 미들웨어') ;
   try {
@@ -8,6 +12,7 @@ const router = express.Router() ; //express 객체에서 Router를 꺼내와 모
   } catch(error) {
     next(error) ; //미들웨어를 다 건너뛰고 에러처리 미들웨어로 이동한다.
   }
+>>>>>>> 024318f549562c81fe4c51a1bd69ad6998d6caa1
 }) ;
  */
 /* router.get('/', (req, res) => {
@@ -37,4 +42,8 @@ router.get('/list', (req, res) => {
 router.post('/', (req, res) => {
 }) ;
 
+<<<<<<< HEAD
 module.exports = router ;
+=======
+module.exports = router ;
+>>>>>>> 024318f549562c81fe4c51a1bd69ad6998d6caa1

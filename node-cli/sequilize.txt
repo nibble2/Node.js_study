@@ -1,0 +1,17 @@
+> npm i sequelize mysql2
+
+> npm i -g sequelize-cli 
+전역설치를 해야 시퀄라이즈를 명령 
+
+> seauelize init
+알아서 config등 필요한 파일을 만들어줌
+
+config.json
+operatorsAliases : false //경고메세지 끔
+
+> sequelize db:create // config.json을 바탕으로 데이터 베이스 생성
+
+models/wallet.js 파일 생성
+
+package.json 수정
+    "wlt": "./wallet.js"
