@@ -20,3 +20,12 @@ modemon은 개발할때만 필요하다, 운영할때는 코드가 바뀌지 않
 > npm i express cookie-parser express-session morgan connect-flash pug
 2. tables
 3. rows
+
+app.js
+비밀번호를 직접 넣어주는 것은 보안에 취약하기 때문에
+dotenv 를 사용
+
+> npm i dotenv
+왜 보안에 좀 더 나아질까 ?
+.env 파일은 비밀파일로 절대로 올리는 파일이 아니다.
+모든 비밀번호를 .env에 몰아 작성하고, 보안 

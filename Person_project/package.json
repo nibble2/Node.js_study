@@ -1,0 +1,11 @@
+{
+  "name": "person_project",
+  "version": "1.0.0",
+  "description": "crud 기능 사용해보기",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nibble",
+  "license": "ISC"
+}
