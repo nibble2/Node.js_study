@@ -1,0 +1,9 @@
+html을 효과적으로 보여주기 위한 라이브러리
+
+> npm install -g create-react-app
+글로벌 패키지를 하게 된다면 이 프로젝트 뿐만 아니라 다른 프로젝트에서도 적용할 수 있다.
+
+
+> create-reac-app 프로젝트 이름
+
+> yarn start (npm install -g yarn)

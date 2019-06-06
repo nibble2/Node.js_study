@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": 1234,
-    "database": "node_wallet",
+    "password": "1234",
+    "database": "nodeWallet",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases" : false
